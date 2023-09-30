@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CountOfDigit {
 	
 	static int countDigit(int n) {
-		return countDigit(n,1);
+		return countDigit(n,0);
 	}
 	
 	static int countDigit(int n, int sum) {

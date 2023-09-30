@@ -18,19 +18,20 @@ public class PerfectNumOrNot {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		while(true) {
+		int choice = 1;
+
+		while(choice == 1) {
 			System.out.println("Enter the number");
 			int n = s.nextInt();
-			try {
 			if(isPerfect(n))
 				System.out.println("the given number " + n + " is Perfect number");
 			else 
 				System.out.println("the given number " + n + " is not Perfect number");
-			}
-			catch(Exception e) {
-				System.out.println(e.getMessage());
-			}
-		    System.out.println();
+			System.out.println();
+
+			System.out.println("Do yo want to continue, yes -> press 1 & no -> press any number");
+			choice = s.nextInt();
 		}
+
 	}
 }
